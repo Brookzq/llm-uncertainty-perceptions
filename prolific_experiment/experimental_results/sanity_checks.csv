@@ -1,0 +1,496 @@
+firebase_id,uncertainty_expression,index,response
+1kU8F49rsUPJTwO552cRIzkBfrt1,highly unlikely,4,5
+1kU8F49rsUPJTwO552cRIzkBfrt1,unlikely,1,5
+1kU8F49rsUPJTwO552cRIzkBfrt1,uncertain,3,5
+1kU8F49rsUPJTwO552cRIzkBfrt1,likely,5,95
+1kU8F49rsUPJTwO552cRIzkBfrt1,highly likely,2,95
+280zzjPNAfUUIiDLw9kcR6hDYmf1,highly unlikely,3,5
+280zzjPNAfUUIiDLw9kcR6hDYmf1,unlikely,4,30
+280zzjPNAfUUIiDLw9kcR6hDYmf1,uncertain,1,40
+280zzjPNAfUUIiDLw9kcR6hDYmf1,likely,5,70
+280zzjPNAfUUIiDLw9kcR6hDYmf1,highly likely,2,95
+2O1dSdzaaBX1Tt7HHAGqxQcYMQM2,highly unlikely,3,5
+2O1dSdzaaBX1Tt7HHAGqxQcYMQM2,unlikely,1,10
+2O1dSdzaaBX1Tt7HHAGqxQcYMQM2,uncertain,2,50
+2O1dSdzaaBX1Tt7HHAGqxQcYMQM2,likely,4,90
+2O1dSdzaaBX1Tt7HHAGqxQcYMQM2,highly likely,5,95
+2qBBwzj16lggjI19zRZOoN96ZQ33,highly unlikely,4,5
+2qBBwzj16lggjI19zRZOoN96ZQ33,unlikely,1,25
+2qBBwzj16lggjI19zRZOoN96ZQ33,uncertain,3,50
+2qBBwzj16lggjI19zRZOoN96ZQ33,likely,5,80
+2qBBwzj16lggjI19zRZOoN96ZQ33,highly likely,2,95
+3j6gkgQNaPhik9wTOqQ5nbmrHHO2,highly unlikely,4,0
+3j6gkgQNaPhik9wTOqQ5nbmrHHO2,unlikely,2,10
+3j6gkgQNaPhik9wTOqQ5nbmrHHO2,uncertain,3,30
+3j6gkgQNaPhik9wTOqQ5nbmrHHO2,likely,5,90
+3j6gkgQNaPhik9wTOqQ5nbmrHHO2,highly likely,1,100
+3lIZL2KI85ZcowCG2GgzopcMB5y2,highly unlikely,5,90
+3lIZL2KI85ZcowCG2GgzopcMB5y2,unlikely,2,0
+3lIZL2KI85ZcowCG2GgzopcMB5y2,uncertain,3,50
+3lIZL2KI85ZcowCG2GgzopcMB5y2,likely,4,50
+3lIZL2KI85ZcowCG2GgzopcMB5y2,highly likely,1,90
+44HklpDB1DZipvV6elcmP4Q9Bjy1,highly unlikely,2,15
+44HklpDB1DZipvV6elcmP4Q9Bjy1,unlikely,1,35
+44HklpDB1DZipvV6elcmP4Q9Bjy1,uncertain,5,50
+44HklpDB1DZipvV6elcmP4Q9Bjy1,likely,4,65
+44HklpDB1DZipvV6elcmP4Q9Bjy1,highly likely,3,85
+4vcHGaEXt7OvZrkrPwjVfXAWs1i1,highly unlikely,3,0
+4vcHGaEXt7OvZrkrPwjVfXAWs1i1,unlikely,2,15
+4vcHGaEXt7OvZrkrPwjVfXAWs1i1,uncertain,4,10
+4vcHGaEXt7OvZrkrPwjVfXAWs1i1,likely,5,95
+4vcHGaEXt7OvZrkrPwjVfXAWs1i1,highly likely,1,100
+5diQKyyDeWdEkkaNO75rI0CymrW2,highly unlikely,1,10
+5diQKyyDeWdEkkaNO75rI0CymrW2,unlikely,4,25
+5diQKyyDeWdEkkaNO75rI0CymrW2,uncertain,2,50
+5diQKyyDeWdEkkaNO75rI0CymrW2,likely,5,75
+5diQKyyDeWdEkkaNO75rI0CymrW2,highly likely,3,90
+67dt2BK0x9ZICuLNNLRLOFKsWe92,highly unlikely,4,10
+67dt2BK0x9ZICuLNNLRLOFKsWe92,unlikely,2,25
+67dt2BK0x9ZICuLNNLRLOFKsWe92,uncertain,3,40
+67dt2BK0x9ZICuLNNLRLOFKsWe92,likely,5,75
+67dt2BK0x9ZICuLNNLRLOFKsWe92,highly likely,1,90
+7JUXq3W7H7REzi4S1Pn0jJLyBuL2,highly unlikely,3,5
+7JUXq3W7H7REzi4S1Pn0jJLyBuL2,unlikely,5,20
+7JUXq3W7H7REzi4S1Pn0jJLyBuL2,uncertain,4,50
+7JUXq3W7H7REzi4S1Pn0jJLyBuL2,likely,2,80
+7JUXq3W7H7REzi4S1Pn0jJLyBuL2,highly likely,1,95
+7PJcMBlIjLOs7ESeQWW3EZD7PbP2,highly unlikely,4,10
+7PJcMBlIjLOs7ESeQWW3EZD7PbP2,unlikely,2,20
+7PJcMBlIjLOs7ESeQWW3EZD7PbP2,uncertain,5,30
+7PJcMBlIjLOs7ESeQWW3EZD7PbP2,likely,1,80
+7PJcMBlIjLOs7ESeQWW3EZD7PbP2,highly likely,3,90
+7ZV3RgjhcRPgRLsIkQV5VTT4MX23,highly unlikely,3,5
+7ZV3RgjhcRPgRLsIkQV5VTT4MX23,unlikely,1,30
+7ZV3RgjhcRPgRLsIkQV5VTT4MX23,uncertain,4,50
+7ZV3RgjhcRPgRLsIkQV5VTT4MX23,likely,5,60
+7ZV3RgjhcRPgRLsIkQV5VTT4MX23,highly likely,2,85
+9Sz9kZxIhYQ1bPNaXoWdGQIPtOA3,highly unlikely,1,15
+9Sz9kZxIhYQ1bPNaXoWdGQIPtOA3,unlikely,5,25
+9Sz9kZxIhYQ1bPNaXoWdGQIPtOA3,uncertain,3,50
+9Sz9kZxIhYQ1bPNaXoWdGQIPtOA3,likely,4,75
+9Sz9kZxIhYQ1bPNaXoWdGQIPtOA3,highly likely,2,85
+Amztiunm1ggUe8JVbJlPJkRi3sp2,highly unlikely,4,100
+Amztiunm1ggUe8JVbJlPJkRi3sp2,unlikely,2,0
+Amztiunm1ggUe8JVbJlPJkRi3sp2,uncertain,1,0
+Amztiunm1ggUe8JVbJlPJkRi3sp2,likely,5,75
+Amztiunm1ggUe8JVbJlPJkRi3sp2,highly likely,3,100
+BF9HuJNCfSXDdYLKR3qFt3R18Tr2,highly unlikely,1,20
+BF9HuJNCfSXDdYLKR3qFt3R18Tr2,unlikely,5,40
+BF9HuJNCfSXDdYLKR3qFt3R18Tr2,uncertain,4,50
+BF9HuJNCfSXDdYLKR3qFt3R18Tr2,likely,2,75
+BF9HuJNCfSXDdYLKR3qFt3R18Tr2,highly likely,3,85
+CK6Q4y94lNhwfqG7w1DQq2UGb092,highly unlikely,5,10
+CK6Q4y94lNhwfqG7w1DQq2UGb092,unlikely,2,35
+CK6Q4y94lNhwfqG7w1DQq2UGb092,uncertain,3,50
+CK6Q4y94lNhwfqG7w1DQq2UGb092,likely,4,70
+CK6Q4y94lNhwfqG7w1DQq2UGb092,highly likely,1,85
+DeWa1lO2fRfYQuuXzkZ3hjHncJP2,highly unlikely,2,0
+DeWa1lO2fRfYQuuXzkZ3hjHncJP2,unlikely,3,25
+DeWa1lO2fRfYQuuXzkZ3hjHncJP2,uncertain,5,40
+DeWa1lO2fRfYQuuXzkZ3hjHncJP2,likely,4,85
+DeWa1lO2fRfYQuuXzkZ3hjHncJP2,highly likely,1,100
+E7CdSfICrNRRgSoZ5xJpFeA27uZ2,highly unlikely,2,10
+E7CdSfICrNRRgSoZ5xJpFeA27uZ2,unlikely,5,25
+E7CdSfICrNRRgSoZ5xJpFeA27uZ2,uncertain,4,25
+E7CdSfICrNRRgSoZ5xJpFeA27uZ2,likely,3,75
+E7CdSfICrNRRgSoZ5xJpFeA27uZ2,highly likely,1,90
+EAzgXfxUZzb2OEkygZdj5kHkXLr1,highly unlikely,1,15
+EAzgXfxUZzb2OEkygZdj5kHkXLr1,unlikely,4,30
+EAzgXfxUZzb2OEkygZdj5kHkXLr1,uncertain,5,50
+EAzgXfxUZzb2OEkygZdj5kHkXLr1,likely,3,70
+EAzgXfxUZzb2OEkygZdj5kHkXLr1,highly likely,2,90
+ENTBldi4DsZSayt7cwC6ZUxCkVs1,highly unlikely,4,0
+ENTBldi4DsZSayt7cwC6ZUxCkVs1,unlikely,2,25
+ENTBldi4DsZSayt7cwC6ZUxCkVs1,uncertain,5,55
+ENTBldi4DsZSayt7cwC6ZUxCkVs1,likely,1,75
+ENTBldi4DsZSayt7cwC6ZUxCkVs1,highly likely,3,100
+EnzvQ8UNMJZwk54Qmz4IsjEibf23,highly unlikely,2,5
+EnzvQ8UNMJZwk54Qmz4IsjEibf23,unlikely,4,25
+EnzvQ8UNMJZwk54Qmz4IsjEibf23,uncertain,1,50
+EnzvQ8UNMJZwk54Qmz4IsjEibf23,likely,3,75
+EnzvQ8UNMJZwk54Qmz4IsjEibf23,highly likely,5,95
+Eu9PAyxXNDem3eEZkOEngMCZoey1,highly unlikely,3,5
+Eu9PAyxXNDem3eEZkOEngMCZoey1,unlikely,5,20
+Eu9PAyxXNDem3eEZkOEngMCZoey1,uncertain,1,0
+Eu9PAyxXNDem3eEZkOEngMCZoey1,likely,2,80
+Eu9PAyxXNDem3eEZkOEngMCZoey1,highly likely,4,95
+G8HADCEfeXczeJVVH8EshMtzNc22,highly unlikely,4,5
+G8HADCEfeXczeJVVH8EshMtzNc22,unlikely,1,15
+G8HADCEfeXczeJVVH8EshMtzNc22,uncertain,2,50
+G8HADCEfeXczeJVVH8EshMtzNc22,likely,5,85
+G8HADCEfeXczeJVVH8EshMtzNc22,highly likely,3,90
+GSYId1BFlpP3Dz5ej6oUtIMxjKK2,highly unlikely,5,5
+GSYId1BFlpP3Dz5ej6oUtIMxjKK2,unlikely,2,25
+GSYId1BFlpP3Dz5ej6oUtIMxjKK2,uncertain,4,35
+GSYId1BFlpP3Dz5ej6oUtIMxjKK2,likely,3,70
+GSYId1BFlpP3Dz5ej6oUtIMxjKK2,highly likely,1,85
+HaYxCEbiLeXlwCkunVDYF86BshG3,highly unlikely,3,10
+HaYxCEbiLeXlwCkunVDYF86BshG3,unlikely,2,20
+HaYxCEbiLeXlwCkunVDYF86BshG3,uncertain,1,65
+HaYxCEbiLeXlwCkunVDYF86BshG3,likely,5,80
+HaYxCEbiLeXlwCkunVDYF86BshG3,highly likely,4,90
+Hwk66wQySefemnsJky77Y1RXshw1,highly unlikely,5,50
+Hwk66wQySefemnsJky77Y1RXshw1,unlikely,3,50
+Hwk66wQySefemnsJky77Y1RXshw1,uncertain,4,50
+Hwk66wQySefemnsJky77Y1RXshw1,likely,1,50
+Hwk66wQySefemnsJky77Y1RXshw1,highly likely,2,50
+IkHypKaHb9fm2uFqf5MuxXi4ivU2,highly unlikely,2,5
+IkHypKaHb9fm2uFqf5MuxXi4ivU2,unlikely,4,25
+IkHypKaHb9fm2uFqf5MuxXi4ivU2,uncertain,5,50
+IkHypKaHb9fm2uFqf5MuxXi4ivU2,likely,3,75
+IkHypKaHb9fm2uFqf5MuxXi4ivU2,highly likely,1,95
+Ir4noK9HM7dMyXzrBEgQCtpdypx2,highly unlikely,2,5
+Ir4noK9HM7dMyXzrBEgQCtpdypx2,unlikely,5,25
+Ir4noK9HM7dMyXzrBEgQCtpdypx2,uncertain,1,50
+Ir4noK9HM7dMyXzrBEgQCtpdypx2,likely,3,80
+Ir4noK9HM7dMyXzrBEgQCtpdypx2,highly likely,4,95
+Ir9P8QlmGFcc00NSHJEz7nyU1vC3,highly unlikely,5,5
+Ir9P8QlmGFcc00NSHJEz7nyU1vC3,unlikely,1,30
+Ir9P8QlmGFcc00NSHJEz7nyU1vC3,uncertain,2,45
+Ir9P8QlmGFcc00NSHJEz7nyU1vC3,likely,4,75
+Ir9P8QlmGFcc00NSHJEz7nyU1vC3,highly likely,3,95
+IrEKanBn6iboerA8vnQZVzkptHi1,highly unlikely,4,10
+IrEKanBn6iboerA8vnQZVzkptHi1,unlikely,3,30
+IrEKanBn6iboerA8vnQZVzkptHi1,uncertain,1,50
+IrEKanBn6iboerA8vnQZVzkptHi1,likely,5,70
+IrEKanBn6iboerA8vnQZVzkptHi1,highly likely,2,90
+JfkOsQWFrRbqId71f6t8L72gRBn1,highly unlikely,5,0
+JfkOsQWFrRbqId71f6t8L72gRBn1,unlikely,4,5
+JfkOsQWFrRbqId71f6t8L72gRBn1,uncertain,1,50
+JfkOsQWFrRbqId71f6t8L72gRBn1,likely,3,95
+JfkOsQWFrRbqId71f6t8L72gRBn1,highly likely,2,100
+K52G8bVwX5eYqHUchThqoh78Dg43,highly unlikely,2,5
+K52G8bVwX5eYqHUchThqoh78Dg43,unlikely,4,20
+K52G8bVwX5eYqHUchThqoh78Dg43,uncertain,1,50
+K52G8bVwX5eYqHUchThqoh78Dg43,likely,5,80
+K52G8bVwX5eYqHUchThqoh78Dg43,highly likely,3,95
+KAQp9wSSCFbh5S8d2pHwN5Q3bwJ2,highly unlikely,2,5
+KAQp9wSSCFbh5S8d2pHwN5Q3bwJ2,unlikely,4,10
+KAQp9wSSCFbh5S8d2pHwN5Q3bwJ2,uncertain,5,50
+KAQp9wSSCFbh5S8d2pHwN5Q3bwJ2,likely,3,90
+KAQp9wSSCFbh5S8d2pHwN5Q3bwJ2,highly likely,1,95
+LFvchTCl25WccxSONiOchoajHyl1,highly unlikely,3,5
+LFvchTCl25WccxSONiOchoajHyl1,unlikely,4,20
+LFvchTCl25WccxSONiOchoajHyl1,uncertain,1,50
+LFvchTCl25WccxSONiOchoajHyl1,likely,2,80
+LFvchTCl25WccxSONiOchoajHyl1,highly likely,5,95
+LiUcqDwc3ugiH9a61kp0g5Fp9sy1,highly unlikely,3,15
+LiUcqDwc3ugiH9a61kp0g5Fp9sy1,unlikely,4,35
+LiUcqDwc3ugiH9a61kp0g5Fp9sy1,uncertain,1,50
+LiUcqDwc3ugiH9a61kp0g5Fp9sy1,likely,5,65
+LiUcqDwc3ugiH9a61kp0g5Fp9sy1,highly likely,2,85
+MPZev0YPhtQy24kHKblZqhhuMjm1,highly unlikely,3,0
+MPZev0YPhtQy24kHKblZqhhuMjm1,unlikely,4,100
+MPZev0YPhtQy24kHKblZqhhuMjm1,uncertain,1,100
+MPZev0YPhtQy24kHKblZqhhuMjm1,likely,5,100
+MPZev0YPhtQy24kHKblZqhhuMjm1,highly likely,2,0
+MSXVGBvCthXhy12QnRmm5xJCWJN2,highly unlikely,3,20
+MSXVGBvCthXhy12QnRmm5xJCWJN2,unlikely,4,30
+MSXVGBvCthXhy12QnRmm5xJCWJN2,uncertain,1,50
+MSXVGBvCthXhy12QnRmm5xJCWJN2,likely,2,60
+MSXVGBvCthXhy12QnRmm5xJCWJN2,highly likely,5,80
+MTU6UldlVJaGp6DkaS4r2UJBHdq1,highly unlikely,3,5
+MTU6UldlVJaGp6DkaS4r2UJBHdq1,unlikely,5,20
+MTU6UldlVJaGp6DkaS4r2UJBHdq1,uncertain,1,35
+MTU6UldlVJaGp6DkaS4r2UJBHdq1,likely,2,65
+MTU6UldlVJaGp6DkaS4r2UJBHdq1,highly likely,4,95
+MX8E63a81uTxhbqs8fy9B69oggE2,highly unlikely,4,10
+MX8E63a81uTxhbqs8fy9B69oggE2,unlikely,2,20
+MX8E63a81uTxhbqs8fy9B69oggE2,uncertain,3,50
+MX8E63a81uTxhbqs8fy9B69oggE2,likely,1,75
+MX8E63a81uTxhbqs8fy9B69oggE2,highly likely,5,95
+NBy5T0gCTQcVM2qUa2CLF0b5pPo2,highly unlikely,1,10
+NBy5T0gCTQcVM2qUa2CLF0b5pPo2,unlikely,2,25
+NBy5T0gCTQcVM2qUa2CLF0b5pPo2,uncertain,5,50
+NBy5T0gCTQcVM2qUa2CLF0b5pPo2,likely,3,75
+NBy5T0gCTQcVM2qUa2CLF0b5pPo2,highly likely,4,90
+Ol4MahzhMRVKeMa1mUldyahf6Y22,highly unlikely,4,15
+Ol4MahzhMRVKeMa1mUldyahf6Y22,unlikely,2,25
+Ol4MahzhMRVKeMa1mUldyahf6Y22,uncertain,3,50
+Ol4MahzhMRVKeMa1mUldyahf6Y22,likely,5,75
+Ol4MahzhMRVKeMa1mUldyahf6Y22,highly likely,1,85
+PfFQoG1JtwXtExt8qctnQZqfbmq1,highly unlikely,2,5
+PfFQoG1JtwXtExt8qctnQZqfbmq1,unlikely,5,20
+PfFQoG1JtwXtExt8qctnQZqfbmq1,uncertain,3,50
+PfFQoG1JtwXtExt8qctnQZqfbmq1,likely,1,80
+PfFQoG1JtwXtExt8qctnQZqfbmq1,highly likely,4,90
+PnoUNOw3yfOHiVnxJ0Q4CGUolMD2,highly unlikely,2,10
+PnoUNOw3yfOHiVnxJ0Q4CGUolMD2,unlikely,4,25
+PnoUNOw3yfOHiVnxJ0Q4CGUolMD2,uncertain,3,50
+PnoUNOw3yfOHiVnxJ0Q4CGUolMD2,likely,1,75
+PnoUNOw3yfOHiVnxJ0Q4CGUolMD2,highly likely,5,90
+QQlTAAPjbkMhFCmK0LaHPTe2v0j2,highly unlikely,1,5
+QQlTAAPjbkMhFCmK0LaHPTe2v0j2,unlikely,4,25
+QQlTAAPjbkMhFCmK0LaHPTe2v0j2,uncertain,5,25
+QQlTAAPjbkMhFCmK0LaHPTe2v0j2,likely,2,75
+QQlTAAPjbkMhFCmK0LaHPTe2v0j2,highly likely,3,95
+RmBgmSY3MIesEdUmGk1bERFYgmK2,highly unlikely,2,5
+RmBgmSY3MIesEdUmGk1bERFYgmK2,unlikely,3,10
+RmBgmSY3MIesEdUmGk1bERFYgmK2,uncertain,1,20
+RmBgmSY3MIesEdUmGk1bERFYgmK2,likely,4,85
+RmBgmSY3MIesEdUmGk1bERFYgmK2,highly likely,5,95
+SAmGP9lH2tQwqTvrMUCAkzK9gdX2,highly unlikely,4,10
+SAmGP9lH2tQwqTvrMUCAkzK9gdX2,unlikely,5,30
+SAmGP9lH2tQwqTvrMUCAkzK9gdX2,uncertain,2,50
+SAmGP9lH2tQwqTvrMUCAkzK9gdX2,likely,3,75
+SAmGP9lH2tQwqTvrMUCAkzK9gdX2,highly likely,1,95
+TOs8vdM6lrUFFmmUttF6U8DS4C43,highly unlikely,1,20
+TOs8vdM6lrUFFmmUttF6U8DS4C43,unlikely,3,25
+TOs8vdM6lrUFFmmUttF6U8DS4C43,uncertain,5,50
+TOs8vdM6lrUFFmmUttF6U8DS4C43,likely,4,75
+TOs8vdM6lrUFFmmUttF6U8DS4C43,highly likely,2,80
+UNOKThCJOndJlDGkenH73mZ1LGp1,highly unlikely,1,30
+UNOKThCJOndJlDGkenH73mZ1LGp1,unlikely,3,50
+UNOKThCJOndJlDGkenH73mZ1LGp1,uncertain,4,60
+UNOKThCJOndJlDGkenH73mZ1LGp1,likely,2,40
+UNOKThCJOndJlDGkenH73mZ1LGp1,highly likely,5,70
+Um1mNNTEBQZPLas3kHgUrvVZKZi1,highly unlikely,1,10
+Um1mNNTEBQZPLas3kHgUrvVZKZi1,unlikely,5,35
+Um1mNNTEBQZPLas3kHgUrvVZKZi1,uncertain,2,20
+Um1mNNTEBQZPLas3kHgUrvVZKZi1,likely,3,80
+Um1mNNTEBQZPLas3kHgUrvVZKZi1,highly likely,4,90
+V3vgkvXmZBWpYUMwvyoV9r13h6x1,highly unlikely,2,5
+V3vgkvXmZBWpYUMwvyoV9r13h6x1,unlikely,4,10
+V3vgkvXmZBWpYUMwvyoV9r13h6x1,uncertain,5,20
+V3vgkvXmZBWpYUMwvyoV9r13h6x1,likely,1,70
+V3vgkvXmZBWpYUMwvyoV9r13h6x1,highly likely,3,90
+VzFEcKZbhlQ4wbO8uOVwr7JaIf43,highly unlikely,2,10
+VzFEcKZbhlQ4wbO8uOVwr7JaIf43,unlikely,3,25
+VzFEcKZbhlQ4wbO8uOVwr7JaIf43,uncertain,4,25
+VzFEcKZbhlQ4wbO8uOVwr7JaIf43,likely,5,75
+VzFEcKZbhlQ4wbO8uOVwr7JaIf43,highly likely,1,90
+WE2RfvRAMxh5RcgyvRnPBTX7AeG2,highly unlikely,3,15
+WE2RfvRAMxh5RcgyvRnPBTX7AeG2,unlikely,5,35
+WE2RfvRAMxh5RcgyvRnPBTX7AeG2,uncertain,4,50
+WE2RfvRAMxh5RcgyvRnPBTX7AeG2,likely,1,65
+WE2RfvRAMxh5RcgyvRnPBTX7AeG2,highly likely,2,85
+WOeGCTbRCqhQ78nSAWNv7kR09f53,highly unlikely,4,5
+WOeGCTbRCqhQ78nSAWNv7kR09f53,unlikely,2,20
+WOeGCTbRCqhQ78nSAWNv7kR09f53,uncertain,1,50
+WOeGCTbRCqhQ78nSAWNv7kR09f53,likely,3,70
+WOeGCTbRCqhQ78nSAWNv7kR09f53,highly likely,5,95
+Wpe9QjLKMySAM5QX9aDsyDd6ki42,highly unlikely,5,10
+Wpe9QjLKMySAM5QX9aDsyDd6ki42,unlikely,2,20
+Wpe9QjLKMySAM5QX9aDsyDd6ki42,uncertain,4,20
+Wpe9QjLKMySAM5QX9aDsyDd6ki42,likely,3,80
+Wpe9QjLKMySAM5QX9aDsyDd6ki42,highly likely,1,90
+Y0UFwI8fCXOLrVovtO4zNiznn2y1,highly unlikely,3,10
+Y0UFwI8fCXOLrVovtO4zNiznn2y1,unlikely,5,20
+Y0UFwI8fCXOLrVovtO4zNiznn2y1,uncertain,1,50
+Y0UFwI8fCXOLrVovtO4zNiznn2y1,likely,2,80
+Y0UFwI8fCXOLrVovtO4zNiznn2y1,highly likely,4,90
+YU7TA7qcyEcQumYuqQRpry1b1X32,highly unlikely,5,10
+YU7TA7qcyEcQumYuqQRpry1b1X32,unlikely,2,25
+YU7TA7qcyEcQumYuqQRpry1b1X32,uncertain,1,50
+YU7TA7qcyEcQumYuqQRpry1b1X32,likely,3,75
+YU7TA7qcyEcQumYuqQRpry1b1X32,highly likely,4,90
+ZXkNcSMx90R9MRdsqy5hEYDCwJM2,highly unlikely,4,15
+ZXkNcSMx90R9MRdsqy5hEYDCwJM2,unlikely,2,35
+ZXkNcSMx90R9MRdsqy5hEYDCwJM2,uncertain,5,50
+ZXkNcSMx90R9MRdsqy5hEYDCwJM2,likely,1,75
+ZXkNcSMx90R9MRdsqy5hEYDCwJM2,highly likely,3,95
+aLUBA5VTyZSrVjHsoUdnlsBe5z32,highly unlikely,3,5
+aLUBA5VTyZSrVjHsoUdnlsBe5z32,unlikely,1,30
+aLUBA5VTyZSrVjHsoUdnlsBe5z32,uncertain,4,10
+aLUBA5VTyZSrVjHsoUdnlsBe5z32,likely,2,80
+aLUBA5VTyZSrVjHsoUdnlsBe5z32,highly likely,5,95
+azmBe6J8QwVm0HcSoY3AjELNBMt1,highly unlikely,1,5
+azmBe6J8QwVm0HcSoY3AjELNBMt1,unlikely,3,0
+azmBe6J8QwVm0HcSoY3AjELNBMt1,uncertain,4,0
+azmBe6J8QwVm0HcSoY3AjELNBMt1,likely,5,85
+azmBe6J8QwVm0HcSoY3AjELNBMt1,highly likely,2,95
+cpy7I4Yrn5SfB9zpoeLUfIiCZoI3,highly unlikely,3,10
+cpy7I4Yrn5SfB9zpoeLUfIiCZoI3,unlikely,1,30
+cpy7I4Yrn5SfB9zpoeLUfIiCZoI3,uncertain,4,50
+cpy7I4Yrn5SfB9zpoeLUfIiCZoI3,likely,5,70
+cpy7I4Yrn5SfB9zpoeLUfIiCZoI3,highly likely,2,90
+ddMXrQTXbVRoJ1NQmjKGKtmiEGv1,highly unlikely,1,30
+ddMXrQTXbVRoJ1NQmjKGKtmiEGv1,unlikely,2,50
+ddMXrQTXbVRoJ1NQmjKGKtmiEGv1,uncertain,3,50
+ddMXrQTXbVRoJ1NQmjKGKtmiEGv1,likely,4,70
+ddMXrQTXbVRoJ1NQmjKGKtmiEGv1,highly likely,5,80
+dgZzeqEzP0dkhiDNZPouBe691Uw2,highly unlikely,3,10
+dgZzeqEzP0dkhiDNZPouBe691Uw2,unlikely,1,20
+dgZzeqEzP0dkhiDNZPouBe691Uw2,uncertain,5,40
+dgZzeqEzP0dkhiDNZPouBe691Uw2,likely,4,60
+dgZzeqEzP0dkhiDNZPouBe691Uw2,highly likely,2,95
+dv0JwR5vaeXItaR2bheYZTG0dca2,highly unlikely,2,0
+dv0JwR5vaeXItaR2bheYZTG0dca2,unlikely,4,5
+dv0JwR5vaeXItaR2bheYZTG0dca2,uncertain,5,30
+dv0JwR5vaeXItaR2bheYZTG0dca2,likely,1,95
+dv0JwR5vaeXItaR2bheYZTG0dca2,highly likely,3,100
+eTNXPUrgbOPQEU3XH4epsEVbfV72,highly unlikely,5,5
+eTNXPUrgbOPQEU3XH4epsEVbfV72,unlikely,3,30
+eTNXPUrgbOPQEU3XH4epsEVbfV72,uncertain,4,20
+eTNXPUrgbOPQEU3XH4epsEVbfV72,likely,1,70
+eTNXPUrgbOPQEU3XH4epsEVbfV72,highly likely,2,85
+eiAqRtkHAxZC83jsnMZcGgunWZx2,highly unlikely,4,15
+eiAqRtkHAxZC83jsnMZcGgunWZx2,unlikely,1,30
+eiAqRtkHAxZC83jsnMZcGgunWZx2,uncertain,5,35
+eiAqRtkHAxZC83jsnMZcGgunWZx2,likely,3,75
+eiAqRtkHAxZC83jsnMZcGgunWZx2,highly likely,2,85
+fWLpJBtx8mhvjqW2qdF7PItWnFx2,highly unlikely,3,10
+fWLpJBtx8mhvjqW2qdF7PItWnFx2,unlikely,4,25
+fWLpJBtx8mhvjqW2qdF7PItWnFx2,uncertain,5,25
+fWLpJBtx8mhvjqW2qdF7PItWnFx2,likely,1,65
+fWLpJBtx8mhvjqW2qdF7PItWnFx2,highly likely,2,90
+gPPyfiPC30XV4PGcmaii3BSDcZN2,highly unlikely,4,5
+gPPyfiPC30XV4PGcmaii3BSDcZN2,unlikely,1,10
+gPPyfiPC30XV4PGcmaii3BSDcZN2,uncertain,2,50
+gPPyfiPC30XV4PGcmaii3BSDcZN2,likely,3,90
+gPPyfiPC30XV4PGcmaii3BSDcZN2,highly likely,5,95
+gSZDVaoZm8MJS78jQcoTGgFwe2k1,highly unlikely,1,10
+gSZDVaoZm8MJS78jQcoTGgFwe2k1,unlikely,4,25
+gSZDVaoZm8MJS78jQcoTGgFwe2k1,uncertain,5,50
+gSZDVaoZm8MJS78jQcoTGgFwe2k1,likely,2,75
+gSZDVaoZm8MJS78jQcoTGgFwe2k1,highly likely,3,90
+gkQUFr2rmqhyjAEnpG3YGDlgpyl1,highly unlikely,3,50
+gkQUFr2rmqhyjAEnpG3YGDlgpyl1,unlikely,1,100
+gkQUFr2rmqhyjAEnpG3YGDlgpyl1,uncertain,2,50
+gkQUFr2rmqhyjAEnpG3YGDlgpyl1,likely,5,100
+gkQUFr2rmqhyjAEnpG3YGDlgpyl1,highly likely,4,100
+iePT3JpFPSUwlpegjxbVqQ3Ulwl2,highly unlikely,5,5
+iePT3JpFPSUwlpegjxbVqQ3Ulwl2,unlikely,1,20
+iePT3JpFPSUwlpegjxbVqQ3Ulwl2,uncertain,2,45
+iePT3JpFPSUwlpegjxbVqQ3Ulwl2,likely,3,80
+iePT3JpFPSUwlpegjxbVqQ3Ulwl2,highly likely,4,95
+ifzvScybRCYdbkElNNRkAPLpL672,highly unlikely,5,0
+ifzvScybRCYdbkElNNRkAPLpL672,unlikely,1,0
+ifzvScybRCYdbkElNNRkAPLpL672,uncertain,4,0
+ifzvScybRCYdbkElNNRkAPLpL672,likely,3,100
+ifzvScybRCYdbkElNNRkAPLpL672,highly likely,2,95
+jkI3BjU2YPSvZA60gHvdc57lV5I3,highly unlikely,2,90
+jkI3BjU2YPSvZA60gHvdc57lV5I3,unlikely,5,40
+jkI3BjU2YPSvZA60gHvdc57lV5I3,uncertain,4,50
+jkI3BjU2YPSvZA60gHvdc57lV5I3,likely,3,70
+jkI3BjU2YPSvZA60gHvdc57lV5I3,highly likely,1,90
+kqwGmm7y3TfLCIgK7LBUssveYvG3,highly unlikely,3,0
+kqwGmm7y3TfLCIgK7LBUssveYvG3,unlikely,4,20
+kqwGmm7y3TfLCIgK7LBUssveYvG3,uncertain,2,30
+kqwGmm7y3TfLCIgK7LBUssveYvG3,likely,1,80
+kqwGmm7y3TfLCIgK7LBUssveYvG3,highly likely,5,95
+l0q4WhNRiteWHIl5CiwgFAQ32k33,highly unlikely,3,0
+l0q4WhNRiteWHIl5CiwgFAQ32k33,unlikely,4,20
+l0q4WhNRiteWHIl5CiwgFAQ32k33,uncertain,1,50
+l0q4WhNRiteWHIl5CiwgFAQ32k33,likely,2,70
+l0q4WhNRiteWHIl5CiwgFAQ32k33,highly likely,5,90
+l2NmnZpq22Nc4w4cTA51xv0FCDv1,highly unlikely,3,5
+l2NmnZpq22Nc4w4cTA51xv0FCDv1,unlikely,5,25
+l2NmnZpq22Nc4w4cTA51xv0FCDv1,uncertain,4,50
+l2NmnZpq22Nc4w4cTA51xv0FCDv1,likely,1,80
+l2NmnZpq22Nc4w4cTA51xv0FCDv1,highly likely,2,95
+lV4Kic77y4fgZW1IVlaVKOPll3s2,highly unlikely,1,10
+lV4Kic77y4fgZW1IVlaVKOPll3s2,unlikely,4,30
+lV4Kic77y4fgZW1IVlaVKOPll3s2,uncertain,3,50
+lV4Kic77y4fgZW1IVlaVKOPll3s2,likely,2,70
+lV4Kic77y4fgZW1IVlaVKOPll3s2,highly likely,5,90
+mbwAumaPowUkeAKkLkvC7R9jyDm2,highly unlikely,5,5
+mbwAumaPowUkeAKkLkvC7R9jyDm2,unlikely,1,25
+mbwAumaPowUkeAKkLkvC7R9jyDm2,uncertain,4,50
+mbwAumaPowUkeAKkLkvC7R9jyDm2,likely,3,80
+mbwAumaPowUkeAKkLkvC7R9jyDm2,highly likely,2,95
+nMxxcBGx0pQy0UCe2brbVCO1QaD3,highly unlikely,5,15
+nMxxcBGx0pQy0UCe2brbVCO1QaD3,unlikely,3,25
+nMxxcBGx0pQy0UCe2brbVCO1QaD3,uncertain,1,0
+nMxxcBGx0pQy0UCe2brbVCO1QaD3,likely,2,65
+nMxxcBGx0pQy0UCe2brbVCO1QaD3,highly likely,4,85
+nNSPxDq6huZf1szvfhUOFHXmktg1,highly unlikely,3,75
+nNSPxDq6huZf1szvfhUOFHXmktg1,unlikely,1,80
+nNSPxDq6huZf1szvfhUOFHXmktg1,uncertain,5,35
+nNSPxDq6huZf1szvfhUOFHXmktg1,likely,4,75
+nNSPxDq6huZf1szvfhUOFHXmktg1,highly likely,2,70
+oOoFYEQR8YaJ4jGMHdrLp5ayuJ93,highly unlikely,2,0
+oOoFYEQR8YaJ4jGMHdrLp5ayuJ93,unlikely,3,20
+oOoFYEQR8YaJ4jGMHdrLp5ayuJ93,uncertain,4,50
+oOoFYEQR8YaJ4jGMHdrLp5ayuJ93,likely,5,85
+oOoFYEQR8YaJ4jGMHdrLp5ayuJ93,highly likely,1,100
+ooejhlkkR2QnID8HYFxYwaU9G922,highly unlikely,3,0
+ooejhlkkR2QnID8HYFxYwaU9G922,unlikely,5,0
+ooejhlkkR2QnID8HYFxYwaU9G922,uncertain,2,0
+ooejhlkkR2QnID8HYFxYwaU9G922,likely,1,100
+ooejhlkkR2QnID8HYFxYwaU9G922,highly likely,4,100
+qGHbFBActGMQgQB18bfFgmxqRB72,highly unlikely,2,5
+qGHbFBActGMQgQB18bfFgmxqRB72,unlikely,3,15
+qGHbFBActGMQgQB18bfFgmxqRB72,uncertain,5,50
+qGHbFBActGMQgQB18bfFgmxqRB72,likely,1,75
+qGHbFBActGMQgQB18bfFgmxqRB72,highly likely,4,90
+r2J7hIO2gDRyEJEXtneMBzrn8Kr1,highly unlikely,5,10
+r2J7hIO2gDRyEJEXtneMBzrn8Kr1,unlikely,4,20
+r2J7hIO2gDRyEJEXtneMBzrn8Kr1,uncertain,2,60
+r2J7hIO2gDRyEJEXtneMBzrn8Kr1,likely,3,80
+r2J7hIO2gDRyEJEXtneMBzrn8Kr1,highly likely,1,90
+rgKMEYGZvDRMQQjzbxv5rxahHJG2,highly unlikely,3,5
+rgKMEYGZvDRMQQjzbxv5rxahHJG2,unlikely,4,25
+rgKMEYGZvDRMQQjzbxv5rxahHJG2,uncertain,2,50
+rgKMEYGZvDRMQQjzbxv5rxahHJG2,likely,1,70
+rgKMEYGZvDRMQQjzbxv5rxahHJG2,highly likely,5,95
+s1JzX1W0QHZjJPloGX0QkiaKI9g2,highly unlikely,5,15
+s1JzX1W0QHZjJPloGX0QkiaKI9g2,unlikely,1,35
+s1JzX1W0QHZjJPloGX0QkiaKI9g2,uncertain,2,35
+s1JzX1W0QHZjJPloGX0QkiaKI9g2,likely,4,80
+s1JzX1W0QHZjJPloGX0QkiaKI9g2,highly likely,3,85
+sG3iLGLo3hQyDWHzt4RA9H1JcfG2,highly unlikely,4,10
+sG3iLGLo3hQyDWHzt4RA9H1JcfG2,unlikely,2,35
+sG3iLGLo3hQyDWHzt4RA9H1JcfG2,uncertain,5,45
+sG3iLGLo3hQyDWHzt4RA9H1JcfG2,likely,1,65
+sG3iLGLo3hQyDWHzt4RA9H1JcfG2,highly likely,3,90
+sbmeUXJSzwai6RkHXH7xWHuCQ0I3,highly unlikely,4,95
+sbmeUXJSzwai6RkHXH7xWHuCQ0I3,unlikely,1,75
+sbmeUXJSzwai6RkHXH7xWHuCQ0I3,uncertain,2,50
+sbmeUXJSzwai6RkHXH7xWHuCQ0I3,likely,5,85
+sbmeUXJSzwai6RkHXH7xWHuCQ0I3,highly likely,3,95
+scNZzqyMSARTwWxVpOJ0NgV2LHx1,highly unlikely,3,15
+scNZzqyMSARTwWxVpOJ0NgV2LHx1,unlikely,2,35
+scNZzqyMSARTwWxVpOJ0NgV2LHx1,uncertain,1,50
+scNZzqyMSARTwWxVpOJ0NgV2LHx1,likely,4,60
+scNZzqyMSARTwWxVpOJ0NgV2LHx1,highly likely,5,80
+tUUXO0GSfgXvndIpZH4LNnHnYBl1,highly unlikely,3,0
+tUUXO0GSfgXvndIpZH4LNnHnYBl1,unlikely,1,20
+tUUXO0GSfgXvndIpZH4LNnHnYBl1,uncertain,4,50
+tUUXO0GSfgXvndIpZH4LNnHnYBl1,likely,2,90
+tUUXO0GSfgXvndIpZH4LNnHnYBl1,highly likely,5,100
+uEBNgXRAduWuo6emTuhgHudN1bF3,highly unlikely,4,0
+uEBNgXRAduWuo6emTuhgHudN1bF3,unlikely,3,25
+uEBNgXRAduWuo6emTuhgHudN1bF3,uncertain,5,50
+uEBNgXRAduWuo6emTuhgHudN1bF3,likely,2,70
+uEBNgXRAduWuo6emTuhgHudN1bF3,highly likely,1,100
+v0jtgkyTzWMcQt8834nd79fRxlt2,highly unlikely,3,10
+v0jtgkyTzWMcQt8834nd79fRxlt2,unlikely,1,25
+v0jtgkyTzWMcQt8834nd79fRxlt2,uncertain,4,40
+v0jtgkyTzWMcQt8834nd79fRxlt2,likely,2,75
+v0jtgkyTzWMcQt8834nd79fRxlt2,highly likely,5,90
+vQg5UG8kvZd8IHrdAh7QpvxZS3d2,highly unlikely,4,10
+vQg5UG8kvZd8IHrdAh7QpvxZS3d2,unlikely,2,20
+vQg5UG8kvZd8IHrdAh7QpvxZS3d2,uncertain,1,50
+vQg5UG8kvZd8IHrdAh7QpvxZS3d2,likely,5,70
+vQg5UG8kvZd8IHrdAh7QpvxZS3d2,highly likely,3,90
+vdOYAYqZniSeVHlKXsW8DCxcYp42,highly unlikely,2,5
+vdOYAYqZniSeVHlKXsW8DCxcYp42,unlikely,4,25
+vdOYAYqZniSeVHlKXsW8DCxcYp42,uncertain,3,40
+vdOYAYqZniSeVHlKXsW8DCxcYp42,likely,5,75
+vdOYAYqZniSeVHlKXsW8DCxcYp42,highly likely,1,95
+w4lwkgPg1VS5pZNU6Bd28CksH4C2,highly unlikely,2,10
+w4lwkgPg1VS5pZNU6Bd28CksH4C2,unlikely,1,25
+w4lwkgPg1VS5pZNU6Bd28CksH4C2,uncertain,4,50
+w4lwkgPg1VS5pZNU6Bd28CksH4C2,likely,3,70
+w4lwkgPg1VS5pZNU6Bd28CksH4C2,highly likely,5,90
+xujpgGSk9JM16bD7GcXXLYNadQh1,highly unlikely,4,5
+xujpgGSk9JM16bD7GcXXLYNadQh1,unlikely,1,30
+xujpgGSk9JM16bD7GcXXLYNadQh1,uncertain,3,30
+xujpgGSk9JM16bD7GcXXLYNadQh1,likely,5,75
+xujpgGSk9JM16bD7GcXXLYNadQh1,highly likely,2,90
+xxWnYZqUprSlNgnixh3eZEw96hn2,highly unlikely,3,0
+xxWnYZqUprSlNgnixh3eZEw96hn2,unlikely,2,20
+xxWnYZqUprSlNgnixh3eZEw96hn2,uncertain,4,50
+xxWnYZqUprSlNgnixh3eZEw96hn2,likely,5,95
+xxWnYZqUprSlNgnixh3eZEw96hn2,highly likely,1,100
+yLm3v6oRa0Ot16u5BwUqwfYujKy1,highly unlikely,3,15
+yLm3v6oRa0Ot16u5BwUqwfYujKy1,unlikely,4,35
+yLm3v6oRa0Ot16u5BwUqwfYujKy1,uncertain,1,0
+yLm3v6oRa0Ot16u5BwUqwfYujKy1,likely,2,75
+yLm3v6oRa0Ot16u5BwUqwfYujKy1,highly likely,5,95
+yfBLcQ4TdhRSav4xBSQsy9Xn9op1,highly unlikely,1,5
+yfBLcQ4TdhRSav4xBSQsy9Xn9op1,unlikely,5,20
+yfBLcQ4TdhRSav4xBSQsy9Xn9op1,uncertain,4,35
+yfBLcQ4TdhRSav4xBSQsy9Xn9op1,likely,3,80
+yfBLcQ4TdhRSav4xBSQsy9Xn9op1,highly likely,2,90

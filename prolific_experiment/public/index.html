@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .graybox {
+            border: 2px solid gray;
+            background: #EEEEEE;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+            width: 800px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .correct{
+          color:red;
+          font-weight:bold;
+        }
+
+        .radiogroup {
+            display:inline-block;
+            vertical-align: top;
+            text-align:center;
+            margin: 7px;
+            position: relative;
+        }
+
+        .radiogroup label {
+            display:block;
+            width: 24px;
+        }
+
+        .radiosmall {
+          margin: 3px;
+        }
+
+        .sidephrase {
+          display: inline-block;
+          width: 15%;
+          margin-top: 5px;
+        }
+
+        .right-button {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .sentencebox {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .indent {
+          margin-left: 50px;
+        }
+
+        .scalelab {
+          width:65px;
+          font-size:medium;
+          text-align:center;
+          position:absolute;
+          left: 50%;
+          top: 60px;
+          transform: translate(-50%, -50%);
+        }
+
+        #phraseGroup {
+          margin-top: 20px;
+          margin-bottom: 15px;
+        }
+
+        .pad {
+          margin-top:5px;
+          margin-bottom:5px;
+        }
+
+    </style>
+    </head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="firebaseconfig.js" type="module"></script>
+  <script src="firebasepsych1.0.js" type="module"></script>
+  <script type="text/javascript" src="data.json"></script>
+  <script type="text/javascript" src="context_examples.json"></script>
+  <script src="main.js" type="module" async="true"></script>
+
+  <div class="graybox" id="consent" style="display:none;">
+    <h2>Participant Information</h2>
+    <p> Please carefully read the information below before you decide to participate in this study.</p>
+    <h3>Project Summary</h3>
+    <p>The aim of this study is to understand how participants perceive another person's confidence in the statements they make. </p>
+    <h3>Time Commitment</h3>
+    <p>We expect this task will take approximately ten minutes to complete.</p>
+    <h3>Benefits & Risks</h3>
+    <p>There are no direct benefits from your participation in this study.</p>
+    <h3>Eligibility Requirements</h3>
+    <ul><li>You can participate only once in this study</li> 
+        <li>United States citizen/resident</li> 
+        <li>18 years or older</li> 
+        <li>English speaker</li> </ul>
+    <h3>Reimbursement & Compensation</h3>
+     <p>You will receive $2 US in return for your participation. <br>
+        Note: If your answers are below a minimal threshold for quality, you will not be compensated.</p>
+    <h3>Confidentiality & Anonymity</h3>
+    <p>All research data collected will be stored securely and confidentially on a password protected server indefinitely.
+        Identifying details will not be associated with any data provided by you as part of any publication or presentation.</p>
+    <input type="checkbox" id="consentbox" name="consentbox" value="consent"><span>Check here to confirm that: you have read and understood this
+       Participant Information Sheet, you are taking part in this research study voluntarily, you meet the eligibility requirements, and you are
+        agreeing that your anonymized data may be shared in public repositories.</span>
+    <div class="right-button"><button id="proceedConsent">Proceed</button></div>
+  </div>
+
+  <div class="graybox" id="instructions" style="display:none;">
+    <h2>Instructions</h2>
+    <p>In this experiment, you will be shown text reflecting an individual's beliefs about a statement.
+    You will then be asked to judge, in your opinion, the strength of that individual's belief. To do so, you will provide
+    a probability (expressed as a percentage) where:<br>
+    <p class="indent">The number <b>0</b> indicates that the individual believes with certainty that the statement is false.</p>
+    <p class="indent">The number <b>100</b> indicates that the individual believes with certainty that the statement is true.</p></p>
+    <div class="right-button"><button id="proceedInstructions">Proceed</button></div>
+  </div>
+
+  <div class="graybox" id="qualityInstructions" style="display:none;">
+    <h2>Quality Control</h2>
+    <p><b>Your responses will be evaluated for quality.</b> We will compare your responses to the average response across other participants and will not compensate participants who deviate signifcantly from this norm.</p>
+    <input type="checkbox" id="qualitybox" name="qualitybox" value="quality"><span>I understand that my responses will be assessed for quality and that no pay will be awarded for low-quality responses.</span>
+    <div class="right-button"><button id="proceedQuality" style="margin-top:25px;">Proceed</button></div>
+  </div>
+
+  <div class="graybox" id="exampleInstructions" style="display:none;">
+    <h2>Example Responses</h2>
+    <p>You will now be shown two example question and response pairs. You will not need to respond; they are provided as examples to familiarize you with the experiment setup.</p>
+    <div class="right-button"><button id="proceedExInstructions">Proceed</button></div>
+  </div>
+
+  <div class="graybox" id="exampleBox" style="display:none;">
+    <h2 id="exampleTitle">Example 1 of 2</h2>
+    <div class="sentencebox" id="uncertaintySentenceEx"></div>
+    <p id="uncertaintyQueryEx"></p>
+    <p class="indent"><span style="font-weight:bold;">0</span><span id="0instEx"></span></p>
+    <p class="indent"><span style="font-weight:bold;">100</span><span id="100instEx"></span></p>
+    <div id="radioDivEx" style="margin-bottom:50px;"></div>
+    <div class="right-button"><button id="proceedExample">Proceed</button></div>
+  </div>
+
+  <div class="graybox" id="mainexperiment" style="display:none;">
+    <h2>Question <span id="trialCounter">X of X</span></h2>
+    <div class="sentencebox" id="uncertaintySentence"></div>
+    <p id="uncertaintyQuery"></p>
+    <p class="indent"><span style="font-weight:bold;">0</span><span id="0inst"></span></p>
+    <p class="indent"><span style="font-weight:bold;">100</span><span id="100inst"></span></p>
+    <div id="radioDiv" style="margin-bottom:30px;"></div>
+    <div class="right-button"><button id="proceedMain">Proceed</button></div>
+  </div>
+
+  <div class="graybox" id="sanityCheck" style="display:none;">
+    <h2>Question 31 of 31</h2>
+    <p>For this final task, you will focus on specific phrases rather than entire sentences.</p>
+    <p>For each phrase below, suppose an individual uses that phrase to describe their belief about a statement. Provide a number between 0 and 100 that reflects,
+      from that individual's perspective, the probability (expressed as a percentage) that the statement is true.
+    </p>
+    <p class="indent"><span style="font-weight:bold;">0</span> indicates the individual believes there is a 0% chance that the statement is true.</p>
+    <p class="indent"><span style="font-weight:bold;">100</span> indicates the individual believes there is a 100% chance that the statement is true.</p>
+    <div id="phraseGroup"></div>
+    <div class="right-button"><button id="proceedSanity">Proceed</button></div>
+  </div>
+
+  <div class="graybox" id="feedback" style="display:none;">
+    <h2>You have reached the end of the experiment. Let us know if anything was unclear or you experienced any difficulties completing this task.</h2>
+    <textarea name="feedback" id="feedbackbox" rows="5" cols="75" wrap="soft" maxlength="300"></textarea>
+    <div class="right-button"><button id="proceedFeedback">Proceed</button></div>
+  </div>
+  
+  <div class="graybox" id="ending" style="display:none;">
+    <h2>Thank you for your participation. Please press the "Finish" button to record your responses and be redirected back to Prolific.</h2>
+    <div class="right-button"><button id="finishExperiment">Finish</button></div>
+  </div>
+
+  <div id="completed" style="display:none;">
+    <h3>Your participation has been recorded. Redirecting you to Prolific...</h3>
+  </div>
+
+</body>
+</html>
