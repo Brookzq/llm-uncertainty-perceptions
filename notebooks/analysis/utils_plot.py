@@ -7,7 +7,7 @@ from matplotlib.ticker import MultipleLocator, PercentFormatter
 
 
 FULL_WIDTH, COL_WIDTH = 6.30045, 3.03209
-DEF_SIZE = FULL_WIDTH, FULL_HEIGHT
+DEFAULT_SIZE = FULL_WIDTH, 2
 
 
 # Accessibility
@@ -28,8 +28,9 @@ def adjust(fig, left=0.0, right=1.0, bottom=0.0, top=1.0, wspace=0.0, hspace=0.0
         hspace = hspace,  # the amount of height reserved for white space between subplots
     )
     
-def save_fig(fig, path, **kwargs):
+def save_fig(fig, path, base_dir: str | None=None, **kwargs):
+    path = f"{base_dir}/{path}" if base_dir else path
     os.makedirs(path.rpartition("/")[0], exist_ok=True)
     path = path.replace(".json", "")
-    print(path)
+    print("Saving figure at", path)
     fig.savefig(path, bbox_inches="tight", **kwargs)

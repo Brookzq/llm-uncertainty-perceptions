@@ -1,4 +1,4 @@
-"""Default variables used in the analysis"""
+"""Default variables used in the post-processing"""
 import numpy 
 
 
