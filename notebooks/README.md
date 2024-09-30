@@ -1,0 +1,2 @@
+Please consider running the notebooks in the `post-processing` folder before running the `analysis` notebooks.
+The post-processing notebooks were created to isolate the post-processing of the obtained results into digestible bits to be evaluated in the analysis part.
