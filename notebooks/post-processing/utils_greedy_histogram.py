@@ -64,7 +64,7 @@ def create_histogram_for_full_logprobs__hf(
     number_logprob_col: List[str],
     unc_col: str,
     uncertainty_expressions: List[str],
-    bin_center: float,
+    bin_center: List[float],
     bin_offset: float,
 ) -> Tuple[Dict[str, float]]:
     # Select the subset of rows concerning the specified uncertainty expressions
@@ -97,13 +97,59 @@ def create_histogram_for_full_logprobs__hf(
         assert -1 <= bn <= 100, f"{argmax} was assigned to bin: {bn}"
         uhistograms[unc_expr][bn] += 1
 
-    total_mass_uhist = {u: np.sum(list(uhistograms[u].values())) for u in uncertainty_expressions}
+    total_mass_uhist = {u: np.sum(list(uhistograms[u].values())) 
+                        for u in uncertainty_expressions}
     min_uhist = min(total_mass_uhist.values())
     max_uhist = max(total_mass_uhist.values())
     assert np.abs(max_uhist - min_uhist) <= 1e-6, f"Bug detected: {max_uhist}, {min_uhist}"
 
     # Normalized histograms
-    nhistograms = {u: {bc: cs / total_mass_uhist[u] for bc, cs in uhistograms[u].items()} for u in uncertainty_expressions}
+    nhistograms = {u: {bc: cs / total_mass_uhist[u] 
+                       for bc, cs in uhistograms[u].items()} for u in uncertainty_expressions}
     return uhistograms, nhistograms
 
 
+def create_histogram_for_sampling_approach(
+    df: pd.DataFrame, 
+    number_col: str, 
+    unc_col: str, 
+    id_cols: List[str], 
+    uncertainty_expressions: list, 
+    bin_center: List[float],
+    bin_offset: float,
+    ok_non_symmetric: bool=False,
+) -> Tuple[Dict[str, float]]:
+    # Select the subset of rows concerning the specified uncertainty expressions
+    df = df[df[unc_col].isin(uncertainty_expressions)]
+
+    # Initialize the histogram
+    uhistograms = init_histograms(uncertainty_expressions, bin_center)
+
+    # Preprocess the dataframe to count values for each expression
+    unique_ids2counts = defaultdict(lambda: defaultdict(lambda: 0))
+    # ^Note:  unique_ids2counts represents a mapping from 
+    # the unique id of an example to a number counter
+    for row_ix, example in df.iterrows():        
+        id_example = tuple(example[col] for col in id_cols + [unc_col])
+        num = example[number_col] 
+        num = -1 if num is None else num
+        unique_ids2counts[id_example][num] += 1
+
+    # collect the max
+    for unique_ids, counter in unique_ids2counts.items():
+        unc_expr = unique_ids[-1]
+        argmax, count_max = sorted(counter.items(), key=lambda x: x[1], reverse=True)[0]
+        bn = get_bin_for_val(argmax, bin_center, bin_offset)
+        assert -1 <= bn <= 100, f"{argmax} was assigned to bin: {bn}"
+        uhistograms[unc_expr][bn] += 1
+
+    total_mass_uhist = {u: np.sum(list(uhistograms[u].values())) 
+                        for u in uncertainty_expressions}
+    min_uhist = min(total_mass_uhist.values())
+    max_uhist = max(total_mass_uhist.values())
+    assert ok_non_symmetric or np.abs(max_uhist - min_uhist) <= 1e-6, f"Bug detected: {max_uhist}, {min_uhist}"
+
+    # Normalized histograms
+    nhistograms = {u: {bc: cs / total_mass_uhist[u] 
+                       for bc, cs in uhistograms[u].items()} for u in uncertainty_expressions}
+    return uhistograms, nhistograms
