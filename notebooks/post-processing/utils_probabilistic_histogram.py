@@ -1,9 +1,12 @@
 import pandas as pd
 import numpy as np
 
+from collections import defaultdict
 from scipy.special import logsumexp
 from typing import Dict, List, Tuple
 from utils_base_histogram import init_histograms, get_bin_for_val
+
+REL_TOL = 1e-5
 
 
 def create_histogram_humans(
@@ -43,7 +46,6 @@ def create_histogram_for_top_k_logprobs__openai(
     # example we will iterate each row, assigning the remaining
     # probability to -1.
     # ----------------------------------------------------------
-    accumulator = 0
     for row_ix, example in df.iterrows():
         unc_expr = example[unc_col]
 
@@ -83,15 +85,65 @@ def create_histogram_for_top_k_logprobs__openai(
     total_mass_uhist = {u: np.sum(list(uhistograms[u].values())) for u in uncertainty_expressions}
     min_uhist = min(total_mass_uhist.values())
     max_uhist = max(total_mass_uhist.values())
-    assert ok_non_symmetric or np.abs(max_uhist - min_uhist) <= 1e-6, f"Bug detected: {max_uhist}, {min_uhist}"
+    assert ok_non_symmetric or np.abs(max_uhist - min_uhist) <= REL_TOL, f"Bug detected: {max_uhist}, {min_uhist}"
 
     for u in uncertainty_expressions:
-        assert np.abs(total[u]-total_mass_uhist[u]) <= 1e-6, f"Bug detected: {np.abs(total[u]-total_mass_uhist[u])}"
+        assert np.abs(total[u]-total_mass_uhist[u]) <= REL_TOL, f"Bug detected: {np.abs(total[u]-total_mass_uhist[u])}"
     
     # Normalized histograms
     nhistograms = {u: {bc: cs / total_mass_uhist[u] for bc, cs in uhistograms[u].items()} for u in uncertainty_expressions}
     return uhistograms, nhistograms
 
 
+def create_histogram_for_full_logprobs__hf(
+    df: pd.DataFrame,
+    id_cols: List[str],
+    number_col: List[str],
+    number_logprob_col: List[str],
+    unc_col: str,
+    uncertainty_expressions: List[str],
+    bin_center: float,
+    bin_offset: float,
+) -> Tuple[Dict[str, float]]:
+    # Select the subset of rows concerning the specified uncertainty expressions
+    df = df[df[unc_col].isin(uncertainty_expressions)].copy()
 
+    # Initialize the histogram
+    uhistograms = init_histograms(uncertainty_expressions, bin_center)
+
+    # Preprocess the dataframe to determine the argmax value for each
+    # id_col
+    uniq_ids2probs = defaultdict(list)
+    uniq_ids2total = defaultdict(lambda: 0)
+    # ^Note: uniq_ids2max represents a mapping from 
+    # the unique id of an example to a tuple with
+    #   * num: representing the current argmax
+    #   * num_logprob: representing the current max logprob
+    for row_ix, example in df.iterrows():
+        id_example = tuple(example[col] for col in id_cols + [unc_col])
+        num = float(example[number_col])
+        num_prob = np.exp(example[number_logprob_col])
+
+        uniq_ids2probs[id_example].append((num, num_prob))
+        uniq_ids2total[id_example] += num_prob
+
+    for unique_ids, total in uniq_ids2total.items():
+        assert - REL_TOL <= total <= 1 + REL_TOL, f"{total}"
+        total = min(1, max(0, total))
+        uniq_ids2probs[unique_ids].append((-1, 1 - total))
     
+    for unique_ids, num_prob_list in uniq_ids2probs.items():
+        unc_expr = unique_ids[-1]
+        for (num, prob) in num_prob_list:
+            bn = get_bin_for_val(num, bin_center, bin_offset)
+            assert -1 <= bn <= 100, f"{num} was assigned to bin: {bn}"
+            uhistograms[unc_expr][bn] += prob
+
+    total_mass_uhist = {u: np.sum(list(uhistograms[u].values())) for u in uncertainty_expressions}
+    min_uhist = min(total_mass_uhist.values())
+    max_uhist = max(total_mass_uhist.values())
+    assert np.abs(max_uhist - min_uhist) <= REL_TOL, f"Bug detected: {max_uhist}, {min_uhist}"
+
+    # Normalized histograms
+    nhistograms = {u: {bc: cs / total_mass_uhist[u] for bc, cs in uhistograms[u].items()} for u in uncertainty_expressions}
+    return uhistograms, nhistograms
