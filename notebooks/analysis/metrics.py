@@ -7,14 +7,6 @@ from typing import Dict, List
 from cpa import *
 
 
-def absolute_error(dist1: dict, dist2: dict):
-    assert dist1.keys() == dist2.keys()
-    error = []
-    for key in dist1:
-        error.append(np.abs(dist1[key] - dist2[key]))
-    return np.cumsum(error)[-1], error
-
-
 def get_statistics_per_distribution(histogram: dict):
     maxs, mins, means, medians, uniques = {}, {}, {}, {}, {}
     for uncertainty, distribution in histogram.items():
@@ -37,8 +29,6 @@ def get_statistics_per_distribution(histogram: dict):
         mins[uncertainty] = numbers[min_id]
         
         uniques[uncertainty] = len(np.unique(prob))
-
-        # TODO: IQR, spread
     
     return {
         "mean": means,
@@ -86,4 +76,84 @@ def compute_wasserstein_distance(
             v_values=model_values, v_weights=model_weights,
         ))
     
+    return pd.DataFrame(results)
+
+
+def compute_mean_conf_error(
+    model_df: pd.DataFrame,
+    ref_df: pd.DataFrame,
+    uncertainty_expressions: List[str],
+) -> pd.DataFrame:
+    """Computes the MAE metric in the main paper."""
+    def _mean_from_hist(num_probs: list) -> float:
+        mean = 0
+        for num, prob_num in num_probs:
+            mean += num * prob_num
+        return mean
+
+    results = defaultdict(list)
+    for expr in uncertainty_expressions:
+        ref_expr_hist = [(float(k), p) for k, p in ref_df.loc[expr].to_dict().items()]
+        ref_expr_mean = _mean_from_hist(ref_expr_hist)
+        
+        model_expr_hist = [(float(k), p) for k, p in model_df.loc[expr].to_dict().items()]
+        model_expr_mean = _mean_from_hist(model_expr_hist)
+
+        results["uncertainty_expression"].append(expr)
+        results["distance"].append(model_expr_mean-ref_expr_mean)
+
+    return pd.DataFrame(results)
+
+
+def compute_proportional_agreement(
+    model_df: pd.DataFrame,
+    ref_df: pd.DataFrame,
+    uncertainty_expressions: List[str],
+) -> pd.DataFrame:
+    """Computes the MAE metric in the main paper."""
+
+
+    results = defaultdict(list)
+    for expr in uncertainty_expressions:
+        ref_expr_hist = {float(k): p for k, p in ref_df.loc[expr].to_dict().items()}        
+        model_expr_hist = {float(k): p for k, p in model_df.loc[expr].to_dict().items()}
+        
+        pa_score = 0 # avg weight
+        for bin_name, bin_val in model_expr_hist.items():
+            pa_score += bin_val * ref_expr_hist[bin_name]
+        
+        results["uncertainty_expression"].append(expr)
+        results["distance"].append(pa_score)
+
+    return pd.DataFrame(results)
+
+
+def compute_interquartile_range(
+    df: pd.DataFrame,
+    uncertainty_expressions: List[str],
+) -> pd.DataFrame:
+    def _compute_iqr_discrete(distribution):
+        values = np.array(list(distribution.keys()))
+        probabilities = np.array(list(distribution.values()))
+
+        cumulative_prob = np.cumsum(probabilities)
+
+        # Find the 25th and 75th percentiles
+        Q1 = values[np.where(cumulative_prob >= 0.25)[0][0]]
+        Q3 = values[np.where(cumulative_prob >= 0.75)[0][0]]
+
+        return Q3 - Q1, Q1, Q3
+
+    results = defaultdict(list)
+    for expr in uncertainty_expressions:
+        expr_hist = [(float(k), p) for k, p in df.loc[expr].to_dict().items()]
+        expr_hist = sorted(expr_hist, key=lambda x: x[0])
+        expr_hist = {k: p for k, p in expr_hist}
+        iqr, q1, q3 = _compute_iqr_discrete(expr_hist)
+        
+        results["uncertainty_expression"].append(expr)
+        results["iqr"].append(iqr)
+        results["q1"].append(q1)
+        results["q3"].append(q3)
+            
     return pd.DataFrame(results)
